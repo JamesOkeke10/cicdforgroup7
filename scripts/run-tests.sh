@@ -28,3 +28,8 @@ if ! grep -q "March 17, 2026" myapp/index.html; then
 fi
 
 echo "All required files are present and date check passed."
+
+if ! grep -q "CI/CD is awesome" myapp/index.html; then
+  echo "ERROR: Required text not found." >&2
+  exit 1
+fi
