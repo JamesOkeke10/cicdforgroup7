@@ -33,3 +33,5 @@ if ! grep -q "CI/CD is awesome" myapp/index.html; then
   echo "ERROR: Required text not found." >&2
   exit 1
 fi
+
+echo "All checks passed."
